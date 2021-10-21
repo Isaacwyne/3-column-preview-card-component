@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  width: 750px;
+  line-height: 1.5;
+}
+
+.column {
+  padding: 28px;
+}
+
+.orange-card {
+  background-color: var(--bright-orange);
+}
+.dark-cyan-card {
+  background-color: var(--dark-cyan);
+}
+.very-dark-cyan-card {
+  background-color: var(--very-dark-cyan);
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--transparent-white);
+  cursor: pointer;
+}
+.orange-btn {
+  color: var(--bright-orange);
+}
+.dark-cyan-btn {
+  color: var(--dark-cyan);
+}
+.very-dark-cyan-btn {
+  color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 728px) {
+  .content {
+    width: 350px;
+    flex-direction: column;
+    height: 100%;
+  }
+  .column {
+    padding: 30px;
+  }
+  /* Add border-radius respectively */
+  .orange-card {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .very-dark-cyan-card {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.attribution a {
+  color:
+}
